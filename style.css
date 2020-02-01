@@ -1,3 +1,153 @@
-h1 {
-    color: tomato;
+
+body {
+    background-image: url(../images/background2.png);
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+}
+
+header {
+    background-color: #ffffff;
+    clear: both;
+    color: #777777;
+    height: 70px;
+    margin-bottom: 20px;
+    outline: 2px solid gray;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1 {
+    float: left;    
+    text-align: center;
+    background-color: #eaac9d;
+    width: fit-content;
+    /* font-weight: 300; */
+    height: 70px;
+    margin: 0px 0px 0px 16.5%;
+    padding: 15px 5px 15px 5px;
+    color: #ffffff;
+    position: relative;
+    clear: both;
+}
+
+#nav {
+    float: right;
+    padding-top: 25px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding-right: 10px;
+    position: relative;
+    word-spacing: 0.15em;
+    width: fit-content;
+}
+
+a:link {
+    text-decoration: none;
+    color: gray;
+} 
+
+a:visited {
+    color: #eaac9d;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+main {
+    width: 960px;
+    background-color: #ffffff;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    word-spacing: 0.1em;
+    font-size: 0.9em;
+    padding-bottom: 60px;
+
+}
+
+main hr {
+    border: 2px dotted #dddddd;
+    margin: 20px 0px 10px 0px;
+}
+
+main h2 {
+    color: #eaac9d;
+    font-weight: 200;
+    font-size: 1.9em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main img {
+    float: left;
+    margin-right: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+input[type=text] {
+    width: 100%;
+    font-size: 1em;
+}
+
+input[name=fullname], 
+input[name=email]{
+    margin: 8px 0;
+    padding: 12px 10px; 
+  }
+
+input[name=message] {
+    height: 200px;
+    padding-top: 0;
+    padding-bottom: 180px;
+    text-align: top;
+    overflow-wrap: normal;
+    overflow: scroll;
+}
+
+input:focus {
+    border: 3px solid #eaac9d;
+  }
+
+input[type=submit] {
+    background-color: #eaac9d;
+    border: none;
+    color: #ffffff;
+    margin: 4px 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: gray;
+    border-top: 8px solid #eaac9d;
+    margin-top: 20px;
+    bottom: 0px;
+    /* opacity: 60%;  */
+    position: absolute;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
